@@ -4,3 +4,13 @@ const sumOfAll = (num) =>{
     return num + sumOfAll(num - 1)
 }
 console.log(sumOfAll(6))
+
+// Q2
+
+const multArr = (arr) =>{
+    if (arr.length === 0) return 1
+    let el = arr.pop()
+    return multArr(arr) * el
+}
+console.log(multArr([2,3,5]))
+console.log(multArr([5,5,1,2]))
