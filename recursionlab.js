@@ -59,3 +59,10 @@ const tripleStep = (num) =>{
 
 }
 console.log(tripleStep(4))
+
+
+//7 
+const coinCombo = (n) =>{
+    if(n === 0) return 0
+    if (n < 0) return 0
+    return coinCombo(n=1)
